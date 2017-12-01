@@ -7,3 +7,12 @@ var config = {
     messagingSenderId: "839496366185"
   };
 firebase.initializeApp(config);
+
+const messaging = firebase.messaging();
+messaging.requestPermission():
+.then(function() {
+    console.log("Permission Graned");
+})
+.catch(function() {
+    console.log("Permission Denied");
+})
