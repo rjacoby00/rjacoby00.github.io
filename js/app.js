@@ -20,3 +20,7 @@ messaging.requestPermission()
 .catch(function() {
     console.log("Error Ocurred");
 })
+
+messaging.onMessage(function(payload) {
+    console.log("onMessage: ", payload);
+})
