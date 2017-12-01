@@ -12,6 +12,10 @@ const messaging = firebase.messaging();
 messaging.requestPermission()
 .then(function() {
     console.log("Permission Graned");
+    return messaging.getToken();
+})
+.then(function(token) {
+    console.log(token);
 })
 .catch(function() {
     console.log("Permission Denied");
