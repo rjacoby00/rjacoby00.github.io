@@ -7,4 +7,3 @@ var config = {
     messagingSenderId: "839496366185"
   };
 firebase.initializeApp(config);
-console.log("test");
