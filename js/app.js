@@ -18,5 +18,5 @@ messaging.requestPermission()
     console.log(token);
 })
 .catch(function() {
-    console.log("Permission Denied");
+    console.log("Error Ocurred");
 })
