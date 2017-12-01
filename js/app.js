@@ -9,7 +9,7 @@ var config = {
 firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
-messaging.requestPermission():
+messaging.requestPermission()
 .then(function() {
     console.log("Permission Graned");
 })
