@@ -18,7 +18,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/rjnotify",
+  "start_url": "/",
   "background_color": "#f44336",
   "theme_color": "#f44336",
   "display": "standalone"
