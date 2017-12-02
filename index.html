@@ -8,6 +8,24 @@
   <meta name="description" content="RJ Notification Service">
   <meta name="author" content="Ryan">
   <link rel="manifest" href="/manifest.json">
+  <script type="text/javascript">
+  var themes = ['money', 'stop', 'slow', 'without', 'countdown'];
+  var theme_choice = themes[Math.floor(Math.random() * themes.length)];
+  var _bftn_options = {
+    /*
+     * Choose from 'money', 'stop', 'slow', 'without' and 'countdown'. Omit this
+     * property to get the default 'countdown' theme.
+     */
+    
+    theme: theme_choice,
+    delay: 1000, // @type {number}
+    date: new Date(2017, 12, 14), // @type {Date}
+    viewCookieExpires: 0, // @type {number}
+    actionCookieExpires: 2, // @type {number}
+    always_show_widget: true // @type {boolean}
+  };
+</script>
+  <script src="https://widget.battleforthenet.com/widget.js" async></script>
 </head>
 
 <body>
