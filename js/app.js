@@ -7,8 +7,9 @@ var config = {
     messagingSenderId: "839496366185"
   };
 firebase.initializeApp(config);
-
 const messaging = firebase.messaging();
+const firestore = firebase.firestore();
+
 messaging.requestPermission()
 .then(function() {
     console.log("Permission Graned");
@@ -16,9 +17,10 @@ messaging.requestPermission()
 })
 .then(function(token) {
     console.log(token);
+    firestore.doc("test/users").set({lastUser: token});
 })
-.catch(function() {
-    console.log("Error Ocurred");
+.catch(function(error) {
+    console.log("Error Ocurred: ", error);
 })
 
 messaging.onMessage(function(payload) {
