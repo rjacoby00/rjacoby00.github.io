@@ -1,0 +1,25 @@
+{
+  "short_name": "RjNotify",
+  "name": "Ryan Jacoby Notifycaton Service",
+  "icons": [
+    {
+      "src": "icons/iconsm.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icons/iconmd.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/iconlg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/rjnotify",
+  "background_color": "#f44336",
+  "theme_color": "#f44336",
+  "display": "standalone"
+}
