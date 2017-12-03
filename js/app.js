@@ -17,7 +17,7 @@ messaging.requestPermission()
 })
 .then(function(token) {
     console.log(token);
-    firestore.doc("test/users").set({lastUser: token});
+    firestore.doc("tests/users").set({lastUser: token});
 })
 .catch(function(error) {
     console.log("Error Ocurred: ", error);
